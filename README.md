@@ -6,7 +6,6 @@ A dark monotonic minimalist theme
 Pallete colors
 ==============
 
-| --------- | ---------- |
 | Color     |   Hexcode  |
 | --------- | ---------- |
 | black     |   #121212  |
@@ -25,7 +24,6 @@ Pallete colors
 | BrMagenta |   #9700b7  |
 | BrCyan    |   #005c7d  |
 | BrWhite   |   #f1f1f1  |
-| --------- | ---------- |
 
 Why these colors?
 =================
