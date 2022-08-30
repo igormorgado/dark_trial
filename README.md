@@ -6,22 +6,26 @@ A dark monotonic minimalist theme
 Pallete colors
 ==============
 
-black      #121212
-red        #ff7c59
-green      #48d56b
-yellow     #ffb94c
-blue       #84a7f2
-magenta	   #ff66e4
-cyan       #39e7d8
-white      #e3e3e3
-BrBlack    #383838
-BrRed      #b51530
-BrGreen    #076b47
-BrYellow   #934305
-BrBlue     #10237a
-BrMagenta  #9700b7
-BrCyan     #005c7d
-BrWhite    #f1f1f1
+| --------- | ---------- |
+| Color     |   Hexcode  |
+| --------- | ---------- |
+| black     |   #121212  |
+| red       |   #ff7c59  |
+| green     |   #48d56b  |
+| yellow    |   #ffb94c  |
+| blue      |   #84a7f2  |
+| magenta	  |   #ff66e4  |
+| cyan      |   #39e7d8  |
+| white     |   #e3e3e3  |
+| BrBlack   |   #383838  |
+| BrRed     |   #b51530  |
+| BrGreen   |   #076b47  |
+| BrYellow  |   #934305  |
+| BrBlue    |   #10237a  |
+| BrMagenta |   #9700b7  |
+| BrCyan    |   #005c7d  |
+| BrWhite   |   #f1f1f1  |
+| --------- | ---------- |
 
 Why these colors?
 =================
