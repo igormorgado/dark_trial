@@ -1,0 +1,76 @@
+#!/bin/bash
+           CRST=$(tput sgr0 )
+
+
+    if [[ "${1}" =~ .*h.* ]]
+    then
+        echo "Usage: ${FUNCNAME[0]} [fg|bg]"
+        return
+    fi
+    if [ "${1}" == "fg" ]
+    then
+        for ((i=0; i<16;i++))
+        do
+            tput setaf "${i}"
+            printf " # %03d # " "${i}"
+        done
+        echo -e "${CRST}"
+        echo
+        for ((i=16; i<232;i++))
+        do
+            tput setaf "${i}"
+            printf "%03d " "${i}"
+            (( (i - 16) % 36  == 35 )) && echo -e "${CRST}"
+        done
+        echo -e "${CRST}"
+        for ((i=232; i<256;i++))
+        do
+            tput setaf "${i}"
+            printf " %03d  " "${i}"
+        done
+    elif [ "${1}" == "bg" ]
+    then
+        for ((i=0; i<16;i++))
+        do
+            tput setab "${i}"
+            printf "   %03d   " "${i}"
+        done
+        echo -e "${CRST}"
+        echo
+        for ((i=16; i<232;i++))
+        do
+            tput setab "${i}"
+            printf "%03d " "${i}"
+            (( (i - 16) % 36  == 35 )) && echo -e "${CRST}"
+        done
+        echo -e "${CRST}"
+        for ((i=232; i<256;i++))
+        do
+            tput setab "${i}"
+            printf " %03d  " "${i}"
+        done
+    else
+        for ((i=0; i<16;i++))
+        do
+            tput setab "${i}"
+            printf "    "
+            (( i  % 8  == 7 )) && echo -e "${CRST} "
+        done
+        echo -e "${CRST}"
+        for ((i=16; i<232;i++))
+        do
+            tput setab "${i}"
+            printf "  "
+            (( (i - 16) % 6  == 5 )) && echo -ne "${CRST} "
+            (( (i - 16) % 36  == 35 )) && echo -e "${CRST}"
+        done
+        echo -e "${CRST}"
+        for ((i=232; i<256;i++))
+        do
+            tput setab "${i}"
+            printf "   " "${i}"
+        done
+
+    fi
+   echo -e "${CRST}"
+

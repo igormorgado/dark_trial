@@ -1,0 +1,34 @@
+#!/bin/bash
+      BOLD=$(tput bold) 
+            DIM=$(tput dim) 
+     ITALIC=$(tput sitm) 
+          UNDER=$(tput smul) 
+     STRIKE=$(tput ritm) 
+        REV=$(tput rev) 
+          BLINK=$(tput blink) 
+        NOUNDER=$(tput rmul) 
+           CRST=$(tput sgr0 ) 
+            RST=$(tput op)
+
+
+	echo -e "
+	${BOLD}You should see a BOLD text here${CRST}. Reset
+
+	${REV}You should see a reversed text here${CRST}. Reset
+
+	${ITALIC}You should see a italic text here${CRST}. Reset
+
+	${STRIKE}You should see a strike text here${CRST}. Reset
+
+	${UNDER}You should see a underlined text here${CRST}. Reset
+
+	${BLINK}You should see and not see a blink text here${CRST}. Reset
+
+	${DIM}You should see a dimmed text here, check the brightness${CRST}. Reset
+
+	Everything is ok here. This text has no effects, it'r regular font${CRST}. Reset
+
+    ${CRST}
+    "
+
+

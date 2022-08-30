@@ -1,0 +1,37 @@
+#!/bin/bash
+CRST=$(tput sgr0 )
+BOLD=$(tput bold) 
+DIM=$(tput dim) 
+ITALIC=$(tput sitm) 
+UNDER=$(tput smul) 
+STRIKE=$(tput ritm) 
+REV=$(tput rev) 
+BLINK=$(tput blink) 
+NOUNDER=$(tput rmul) 
+CRST=$(tput sgr0 ) 
+RST=$(tput op)
+
+
+for ((i=0; i<16;i++))
+do
+    tput setaf 7 "${i}"
+    tput setab "${i}"
+    printf " # %03d # " "${i}"
+    (( i  % 8  == 7 )) && echo -e "${CRST} "
+done
+
+for ((i=0; i<16;i++))
+do
+    tput setaf "${i}"
+    printf " # %03d # " "${i}"
+    (( i  % 8  == 7 )) && echo -e "${CRST} "
+done
+
+for ((i=0; i<16;i++))
+do
+    tput dim
+    tput setaf "${i}"
+    printf " # %03d # " "${i}"
+    (( i  % 8  == 7 )) && echo -e "${CRST} "
+done
+

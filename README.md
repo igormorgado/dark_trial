@@ -1,3 +1,7 @@
+DARK TRIAL
+==========
+
+A dark monotonic minimalist theme
 
 Pallete colors
 ==============
